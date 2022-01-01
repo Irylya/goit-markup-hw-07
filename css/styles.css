@@ -362,6 +362,8 @@ body {
 
 .team-card {
   position: relative;
+  width: 270px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -440,12 +442,12 @@ body {
   margin-top: 16px;
 }
 
-.social-link-item {
+.social-links__item {
   width: 44px;
   height: 44px;
 }
 
-.social-link-item:not(:last-child) {
+.social-links__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -468,7 +470,7 @@ body {
   fill: var(--second-acsent-color);
 }
 
-.icon-box-social {
+.social-link__icon {
   width: 20px;
   height: 20px;
 }
@@ -482,11 +484,11 @@ body {
   align-items: center;
 }
 
-.client:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link {
+.link-box {
   display: flex;
   width: 170px;
   height: 92px;
@@ -501,13 +503,13 @@ body {
   transition: border var(--shift), fill var(--shift);
 }
 
-.client-link:hover,
-.client-link:focus {
+.link-box:hover,
+.link-box:focus {
   border: 1px solid var(--acsent-color);
   fill: var(--acsent-color);
 }
 
-.icon-client-box {
+.link-box__icon {
   width: 106px;
   height: 60px;
 }
@@ -561,7 +563,7 @@ body {
   text-transform: uppercase;
 }
 
-.social-link-footer {
+.footer__social-link {
   fill: var(--second-acsent-color);
   background: rgba(255, 255, 255, 0.1);
 }
