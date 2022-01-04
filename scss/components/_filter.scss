@@ -1,0 +1,14 @@
+.filter__container {
+  padding-bottom: 16px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter__item:not(:first-child) {
+  margin-left: 8px;
+}

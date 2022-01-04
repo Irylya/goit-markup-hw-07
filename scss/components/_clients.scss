@@ -1,0 +1,34 @@
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--linc-fill-color);
+  border-radius: 4px;
+
+  fill: var(--linc-fill-color);
+
+  transition: border var(--shift), fill var(--shift);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--acsent-color);
+    fill: var(--acsent-color);
+  }
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+}
