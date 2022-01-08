@@ -1,12 +1,7 @@
 .filter-button {
   padding: 6px 22px;
 
-  color: var(--tittle-text-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-
+  @include text-button(500, 16px, 1.62, var(--tittle-text-color));
   background-color: var(--second-bg-color);
 
   transition: box-shadow var(--shift), color var(--shift), background-color var(--shift);

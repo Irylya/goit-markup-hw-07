@@ -12,16 +12,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
+  @include square-size(100%);
   transform: translateY(100%);
 
   transition: transform var(--shift);
 
   padding: 63px 24px;
 
-  font-size: 18px;
-  line-height: 1.56;
+  @include f-size-height(18px, 1.56);
+
   color: var(--second-acsent-color);
 
   background-color: var(--acsent-color-transparent);
@@ -34,14 +33,12 @@
 
 .project__title {
   margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+
+  @include text-title(700, 18px, 2, start);
+
   letter-spacing: 0.06em;
-  color: var(--tittle-text-color);
 }
 
 .project__type {
-  font-size: 16px;
-  line-height: 1.88;
+  @include f-size-height(16px, 1.88);
 }

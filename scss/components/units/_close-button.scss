@@ -1,6 +1,6 @@
 .close-button {
-  width: 30px;
-  height: 30px;
+  @include square-size(30px);
+
   border-width: 1px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.1);
@@ -11,8 +11,7 @@
 }
 
 .close-button__icon {
-  width: 11px;
-  height: 11px;
+  @include square-size(11px);
 
   fill: #000000;
 

@@ -5,15 +5,13 @@
 .subscribe__box {
   position: relative;
   display: block;
-  width: 358px;
-  height: 50px;
+  @include width-height(358px, 50px);
+
   margin-right: 12px;
 }
 
 .subscribe__input {
-  display: block;
-  width: 100%;
-  height: 100%;
+  @include square(100%);
   padding-left: 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -40,10 +38,9 @@
 
   display: block;
 
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  @include f-size-height(16px, 1.25);
+
+  color: var(--second-acsent-color-transparent);
 
   transition: transform var(--shift);
 

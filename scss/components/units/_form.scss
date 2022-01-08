@@ -1,6 +1,5 @@
 .form {
-  display: flex;
-  flex-wrap: wrap;
+  @include flex-wrap;
 }
 
 .form__title {
@@ -8,11 +7,7 @@
   margin: 0 auto;
   margin-bottom: 12px;
 
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  color: var(--tittle-text-color);
+  @include text-title(700, 20px, 1.15, center);
 }
 
 .form-box {
@@ -20,9 +15,7 @@
   display: block;
   width: 100%;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include f-size-height-spacing(12px, 1.17, 0.01em);
 
   & + & {
     margin-top: 10px;
@@ -31,8 +24,7 @@
 
 .form-box__input {
   display: block;
-  height: 40px;
-  width: 100%;
+  @include block-width-height(100%, 40px);
 
   padding-left: 42px;
   border: 1px solid;
@@ -74,9 +66,7 @@
   position: absolute;
   left: 12px;
   bottom: 11px;
-  display: block;
-  width: 18px;
-  height: 18px;
+  @include block-width-height(18px, 18px);
 
   fill: var(--tittle-text-color);
 
@@ -96,8 +86,7 @@
 
 .form-policy__checkbox {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  @include square-size(1px);
   margin: -1px;
   border: 0;
   padding: 0;
@@ -111,8 +100,7 @@
   border: 2px solid;
   border-radius: 2px;
   border-color: #000000;
-  width: 16px;
-  height: 15px;
+  @include width-height(16px, 15px);
   fill: #fff;
 
   transition: fill var(--shift), border var(--shift);

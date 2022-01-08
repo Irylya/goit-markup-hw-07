@@ -4,8 +4,7 @@
 }
 
 .feature {
-  display: flex;
-  flex-wrap: wrap;
+  @include flex-wrap;
 }
 
 .feature__item {
@@ -20,9 +19,7 @@
 .feature__wrapper {
   position: relative;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered-content;
   height: 120px;
 
   margin-bottom: 30px;
@@ -33,8 +30,7 @@
     content: '';
     position: absolute;
 
-    width: 0%;
-    height: 100%;
+    @include width-height(0%, 100%);
     right: 0;
     background-color: var(--acsent-color-transparent);
 
@@ -49,17 +45,14 @@
 
 .feature__icon {
   z-index: 1;
-  width: 70px;
-  height: 70px;
+  @include square-size(70px);
 }
 
 .feature__title {
   margin-top: 0;
   margin-bottom: 10px;
 
-  color: var(--tittle-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include text-title(700, 14px, 1.14, start);
+
   text-transform: uppercase;
 }

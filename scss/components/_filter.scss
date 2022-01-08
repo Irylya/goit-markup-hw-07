@@ -3,10 +3,8 @@
 }
 
 .filter {
-  display: flex;
+  @include centered-content;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .filter__item:not(:first-child) {

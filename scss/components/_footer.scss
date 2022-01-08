@@ -8,13 +8,12 @@
 }
 
 .footer__container {
-  display: flex;
-  flex-wrap: wrap;
+  @include flex-wrap;
   align-items: baseline;
 }
 
 .footer__logo {
-  color: #fff;
+  color: var(--second-acsent-color);
 }
 
 .footer__address {
@@ -43,11 +42,7 @@
   margin-top: 0;
   margin-bottom: 20px;
 
-  color: var(--second-acsent-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+  @include text-title-second(700, 14px, 1.14, start);
 }
 
 .footer__social-link {

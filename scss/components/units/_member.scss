@@ -1,8 +1,7 @@
 .member__flip {
   position: relative;
 
-  width: 270px;
-  height: 260px;
+  @include width-height(270px, 260px);
 
   transform-style: preserve-3d;
 }
@@ -19,15 +18,11 @@
 .member__overlay {
   transform: rotateY(-180deg);
 
-  display: block;
-  width: 100%;
-  height: 100%;
+  @include square(100%);
 
   padding: 64px 24px;
 
-  font-size: 18px;
-  line-height: 1.56;
-  color: var(--second-acsent-color);
+  @include overlay;
 
   background-color: var(--acsent-color-transparent);
 
@@ -52,14 +47,12 @@
   margin-bottom: 10px;
 
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
   color: var(--tittle-text-color);
 }
 
+.member__title,
 .member__position {
-  font-size: 16px;
-  line-height: 1.19;
+  @include f-size-height(16px, 1.19);
 }
 
 .member__social-links {

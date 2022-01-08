@@ -28,8 +28,7 @@
 
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  @include width-height(528px, 581px);
   transform: translate(-50%, -50%) scale(1);
 
   background-color: var(--primary-bg-color);

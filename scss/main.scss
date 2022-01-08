@@ -2,6 +2,9 @@
 @import './base/normalize';
 @import './base/change_of_desing';
 
+@import './utils/mixins';
+@import './utils/fonts-mixins';
+
 @import './components/page';
 
 @import './components/units/logo';
