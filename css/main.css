@@ -292,8 +292,6 @@ summary {
 
 .image {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .link,
@@ -1213,7 +1211,9 @@ summary {
 
 .project__content {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .project__image-box {
@@ -1227,9 +1227,9 @@ summary {
   right: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(calc(100% + 1px));
+      -ms-transform: translateY(calc(100% + 1px));
+          transform: translateY(calc(100% + 1px));
   -webkit-transition: -webkit-transform var(--shift);
   transition: -webkit-transform var(--shift);
   -o-transition: transform var(--shift);
